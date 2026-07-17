@@ -1,0 +1,44 @@
+# --- PDF parsing & chunking ---
+pdfplumber==0.11.4
+
+# --- Embeddings ---
+sentence-transformers==3.3.1
+torch==2.5.1
+
+# --- Retrieval: vector store + sparse index ---
+chromadb==0.5.23
+rank-bm25==0.2.2
+
+# --- Agent framework ---
+langgraph==0.2.60
+langchain-anthropic==0.3.0
+langchain-core==0.3.28
+
+# --- LLM ---
+anthropic==0.42.0
+
+# --- Evaluation ---
+ragas==0.2.9
+datasets==3.2.0
+
+# --- Experiment tracking ---
+mlflow==2.19.0
+
+# --- API ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- Live data tools ---
+requests==2.32.3
+pandas==2.2.3
+
+# --- Utilities ---
+python-dotenv==1.0.1
+tenacity==9.0.0
+tqdm==4.67.1
+
+# --- Dev / testing ---
+pytest==8.3.4
+pytest-asyncio==0.25.0
