@@ -1,0 +1,242 @@
+[
+  {
+    "id": "q01",
+    "question": "What was the cash rate target after the RBA Board's meeting on 2 February 2021, and what did they announce about bond purchases?",
+    "reference_answer": "The Board reaffirmed the cash rate target at 0.1 per cent and the Exchange Settlement balances rate at zero per cent, and agreed to purchase an additional $100 billion of government bonds (at $5 billion per week) once the existing bond purchase program finished in mid-April 2021.",
+    "relevant_dates": ["2021-02-02"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q02",
+    "question": "What did the Board decide at its 2 November 2021 meeting regarding the cash rate and the bond purchase program?",
+    "reference_answer": "The Board maintained the cash rate target at 10 basis points and continued to purchase government securities at the rate of $4 billion a week until at least mid-February 2022.",
+    "relevant_dates": ["2021-11-02"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q03",
+    "question": "When did the RBA end its government bond purchase program, and what was the cash rate decision at that meeting?",
+    "reference_answer": "At the 1 February 2022 meeting, the Board decided to cease further purchases of government securities under the bond purchase program, with the final purchases taking place on 10 February 2022. The cash rate target was left unchanged at 10 basis points.",
+    "relevant_dates": ["2022-02-01"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q04",
+    "question": "What was the RBA's first cash rate hike of the 2022 tightening cycle, and what did it bring the cash rate target to?",
+    "reference_answer": "At the 3 May 2022 meeting, the Board increased the cash rate target by 25 basis points to 35 basis points (0.35%), and increased the Exchange Settlement balances rate to 25 basis points.",
+    "relevant_dates": ["2022-05-03"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q05",
+    "question": "What rate rise did the RBA Board decide on in September 2022, and what was the unemployment rate at the time?",
+    "reference_answer": "On 6 September 2022, the Board increased the cash rate target by 50 basis points to 2.35 per cent. The unemployment rate had declined to 3.4 per cent in July, the lowest in almost 50 years.",
+    "relevant_dates": ["2022-09-06"],
+    "answerable": true,
+    "category": "decision_and_context"
+  },
+  {
+    "id": "q06",
+    "question": "In October 2022, did the RBA raise rates by 25 or 50 basis points, and what was the resulting cash rate target?",
+    "reference_answer": "The Board increased the cash rate target by 25 basis points to 2.60 per cent (slowing from the previous 50bp increases), and increased the Exchange Settlement balances rate by 25 basis points to 2.50 per cent.",
+    "relevant_dates": ["2022-10-04"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q07",
+    "question": "What did the RBA Board say about the path to a 'soft landing' in its December 2022 minutes?",
+    "reference_answer": "The Board described the path to achieving a soft landing - returning inflation to target while keeping the economy on an even keel - as 'a narrow one', with risks in both directions.",
+    "relevant_dates": ["2022-12-06"],
+    "answerable": true,
+    "category": "reasoning"
+  },
+  {
+    "id": "q08",
+    "question": "Why did the RBA raise rates by only 25 basis points rather than 50 at its February 2023 meeting?",
+    "reference_answer": "The Board considered both a 25bp and a 50bp increase. It chose 25bp because interest rates had already been adjusted substantially, reducing the need for a larger move, even though recent inflation data showed more breadth and persistence than expected. The cash rate target rose to 3.35 per cent.",
+    "relevant_dates": ["2023-02-07"],
+    "answerable": true,
+    "category": "reasoning"
+  },
+  {
+    "id": "q09",
+    "question": "What did the RBA Board mean when it described monetary policy as being 'in restrictive territory' in March 2023?",
+    "reference_answer": "At the 7 March 2023 meeting, members said monetary policy was in restrictive territory and that it would be appropriate 'at some point' to hold the cash rate steady to more fully assess the effect of the interest rate increases to date, even as they raised the rate by 25bp to 3.6 per cent at that meeting.",
+    "relevant_dates": ["2023-03-07"],
+    "answerable": true,
+    "category": "reasoning"
+  },
+  {
+    "id": "q10",
+    "question": "Why did the RBA pause its rate hikes in April 2023, and what rate was held?",
+    "reference_answer": "The Board paused to gather more information on the economic outlook before deciding whether further tightening was needed, while stressing that policy 'may need to be tightened at subsequent meetings'. The cash rate target was left unchanged at 3.6 per cent.",
+    "relevant_dates": ["2023-04-04"],
+    "answerable": true,
+    "category": "decision_and_reasoning"
+  },
+  {
+    "id": "q11",
+    "question": "What rate decision did the RBA make in June 2023 and what were the main arguments for and against it?",
+    "reference_answer": "On 6 June 2023 the Board raised the cash rate target by 25 basis points to 4.1 per cent. The case for raising centred on the risk that inflation would take longer to return to target; the case for holding centred on weak consumption growth and falling real incomes. The Board judged the case for raising stronger.",
+    "relevant_dates": ["2023-06-06"],
+    "answerable": true,
+    "category": "decision_and_reasoning"
+  },
+  {
+    "id": "q12",
+    "question": "In July 2023, why did the Board decide to hold the cash rate steady, and what did it say about mortgage payments?",
+    "reference_answer": "The Board held the cash rate at 4.1 per cent, noting considerable uncertainty about household consumption and that the tightening to date was still working through the economy. It noted mortgage payments as a share of household income were near a record high, and said some further tightening may still be required.",
+    "relevant_dates": ["2023-07-04"],
+    "answerable": true,
+    "category": "decision_and_reasoning"
+  },
+  {
+    "id": "q13",
+    "question": "What was the RBA's cash rate decision in September 2023?",
+    "reference_answer": "The Board decided to leave the cash rate target unchanged at 4.1 per cent, and the Exchange Settlement balances rate at 4 per cent.",
+    "relevant_dates": ["2023-09-05"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q14",
+    "question": "What was the cash rate target in May 2024, and had it changed from the previous meeting?",
+    "reference_answer": "The Board left the cash rate target unchanged at 4.35 per cent (and the Exchange Settlement balances rate unchanged at 4.25 per cent) at its 7 May 2024 meeting.",
+    "relevant_dates": ["2024-05-07"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q15",
+    "question": "What did the Board say in November 2024 about future changes to the cash rate target?",
+    "reference_answer": "The Board said it was 'not possible to rule anything in or out in relation to future changes in the cash rate target', and would rely on data and an evolving assessment of risks. It left the cash rate target unchanged at 4.35 per cent.",
+    "relevant_dates": ["2024-11-05"],
+    "answerable": true,
+    "category": "reasoning"
+  },
+  {
+    "id": "q16",
+    "question": "What was the cash rate target at the end of 2024, after the December meeting?",
+    "reference_answer": "The Board left the cash rate target unchanged at 4.35 per cent at its 10 December 2024 meeting, with the Exchange Settlement balances rate unchanged at 4.25 per cent.",
+    "relevant_dates": ["2024-12-10"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q17",
+    "question": "When did the RBA first cut the cash rate after its 2022-2023 tightening cycle, and did it commit to further cuts?",
+    "reference_answer": "On 18 February 2025 the Board reduced the cash rate target by 25 basis points to 4.10 per cent - its first cut of the cycle. It explicitly did not commit to further reductions at subsequent meetings.",
+    "relevant_dates": ["2025-02-18"],
+    "answerable": true,
+    "category": "decision_and_reasoning"
+  },
+  {
+    "id": "q18",
+    "question": "What rate cut did the RBA make in May 2025, and what was the resulting cash rate?",
+    "reference_answer": "On 20 May 2025 the Board decided to lower the cash rate target by 25 basis points to 3.85 per cent.",
+    "relevant_dates": ["2025-05-20"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q19",
+    "question": "Was the RBA's July 2025 decision to hold rates unanimous?",
+    "reference_answer": "No. The Board decided by majority (six in favour, three against) to leave the cash rate target unchanged at 3.85 per cent.",
+    "relevant_dates": ["2025-07-08"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q20",
+    "question": "What happened to the cash rate target at the RBA's August 2025 meeting?",
+    "reference_answer": "The Board decided unanimously to lower the cash rate target by 25 basis points to 3.6 per cent.",
+    "relevant_dates": ["2025-08-12"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q21",
+    "question": "What was the RBA's cash rate decision in December 2025?",
+    "reference_answer": "The Board decided unanimously to leave the cash rate target unchanged at 3.60 per cent.",
+    "relevant_dates": ["2025-12-09"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q22",
+    "question": "Did the RBA raise or cut rates in February 2026, and was the decision unanimous?",
+    "reference_answer": "The Board decided unanimously to raise the cash rate target by 25 basis points, to 3.85 per cent.",
+    "relevant_dates": ["2026-02-03"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q23",
+    "question": "Was the RBA Board unanimous in its March 2026 rate decision, and what was decided?",
+    "reference_answer": "No. The Board resolved by majority (five in favour, four against) to raise the cash rate to 4.10 per cent; the four dissenting members preferred to leave it unchanged at 3.85 per cent.",
+    "relevant_dates": ["2026-03-17"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "q24",
+    "question": "What external event influenced the RBA's May 2026 rate decision, and what was decided?",
+    "reference_answer": "The Board's deliberations referenced the conflict in the Middle East and its effect on fuel prices and the inflation outlook. The Board resolved by majority (eight in favour, one against) to raise the cash rate target to 4.35 per cent.",
+    "relevant_dates": ["2026-05-05"],
+    "answerable": true,
+    "category": "decision_and_reasoning"
+  },
+  {
+    "id": "q25",
+    "question": "What was the RBA's cash rate decision at its June 2026 meeting?",
+    "reference_answer": "The Board decided unanimously to leave the cash rate target unchanged at 4.35 per cent.",
+    "relevant_dates": ["2026-06-16"],
+    "answerable": true,
+    "category": "decision"
+  },
+  {
+    "id": "u01",
+    "question": "What did the RBA Governor have for breakfast on the morning of the June 2023 board meeting?",
+    "reference_answer": "The minutes do not record this information. The assistant should say it doesn't know rather than guessing.",
+    "relevant_dates": [],
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "u02",
+    "question": "What was the exact closing price of the ASX 200 on the day of every RBA meeting in 2023?",
+    "reference_answer": "The minutes do not report daily ASX 200 closing prices. The assistant should say it doesn't know rather than fabricating figures.",
+    "relevant_dates": [],
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "u03",
+    "question": "Which RBA Board member's favourite restaurant in Sydney is mentioned in the minutes?",
+    "reference_answer": "The minutes contain no such information. The assistant should say it doesn't know.",
+    "relevant_dates": [],
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "u04",
+    "question": "What is the RBA's current cash rate decision for its next meeting in 2027?",
+    "reference_answer": "The minutes corpus does not extend to a 2027 meeting or any future decision. The assistant should say it doesn't know rather than predicting a future decision.",
+    "relevant_dates": [],
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "u05",
+    "question": "How many pages long was the printed transcript of the RBA's internal staff briefing before the May 2024 meeting?",
+    "reference_answer": "The minutes do not disclose this. The assistant should say it doesn't know rather than guessing a page count.",
+    "relevant_dates": [],
+    "answerable": false,
+    "category": "unanswerable"
+  }
+]

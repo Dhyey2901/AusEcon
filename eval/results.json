@@ -1,0 +1,332 @@
+{
+  "summary": {
+    "n_questions": 30,
+    "n_answerable": 25,
+    "n_unanswerable": 5,
+    "retrieval_hit_rate": 0.36,
+    "answer_correctness_rate": 1.0,
+    "abstention_rate_on_unanswerable": 1.0
+  },
+  "results": [
+    {
+      "id": "q01",
+      "question": "What was the cash rate target after the RBA Board's meeting on 2 February 2021, and what did they announce about bond purchases?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "**Cash rate target:** The Board kept the cash rate target at 0.1 per cent (10 basis points). It also kept the interest rate on Exchange Settlement balances at zero. (2021-02-02, The decision, 2 February 2021 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf)\n\n**Bond purchases:** The Board announced a second round of bond buying.\n- It agreed to buy an additional $100 billion of government bonds once the existing program finished in mid April 2021. The pace stayed at $5 billion per week. (2021-02-02, The decision, same source)\n- The existing program was the $100 billion of 5–10 year bonds started after the 3 November 2020 meeting. (2021-02-02, The decision, same source)\n- The additional purchases were to cover Australian Government and state and territory bonds, split roughly 80 per cent and 20 per cent. (2021-02-02, Considerations for monetary policy, same source)\n\n**Other settings reaffirmed:**\n- The target of around 0.1 per cent for the 3-year Australian Government bond yield stayed in place.\n- The Term Funding Facility settings were unchanged. (2021-02-02, The decision, same source)\n\n**Why the Board did this:**\n- It expected it would be \"some years\" before its inflation and unemployment goals were met. (2021-02-02, Considerations for monetary policy, same source)\n- It did not expect the conditions for raising the cash rate to be met until 2024 at the earliest. (2021-02-02, Considerations for monetary policy, same source)\n- It noted that other central banks had extended their programs. It judged that stopping purchases in April would likely put unwelcome upward pressure on the exchange rate. (2021-02-02, Considerations for monetary policy, same source)",
+      "elapsed_seconds": 18.4,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's core facts match the reference: cash rate target at 0.1 per cent, ES balances rate at zero, and an additional $100 billion of bond purchases at $5 billion per week once the existing program ended in mid-April 2021. The extra details (80/20 split between Australian Government and state bonds, 3-year yield target, 2024 guidance) are consistent with the actual February 2021 minutes and do not contradict the reference."
+    },
+    {
+      "id": "q02",
+      "question": "What did the Board decide at its 2 November 2021 meeting regarding the cash rate and the bond purchase program?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "At its 2 November 2021 meeting, the Board kept the cash rate target unchanged and continued the bond purchase program at the same pace. It also discontinued the yield target.\n\n**Cash rate**\n- The Board decided to \"maintain the cash rate target at 10 basis points and the interest rate on Exchange Settlement balances at zero per cent\" (2021-11-02, 2 November 2021 Minutes of the Monetary Policy Meeting of the Board).\n- The minutes say the central scenario was still consistent with the cash rate staying at its current level until 2024. They also said future cash rate decisions would depend on the state of the economy, not on particular calendar dates (2021-11-02, same source).\n- The Board said it would not raise the cash rate until inflation is sustainably between 2 and 3 per cent. It said this requires a labour market tight enough to generate materially higher wages growth, and that it was \"prepared to be patient\" (2021-11-02, same source).\n\n**Bond purchase program**\n- The Board decided to \"continue to purchase government securities at the rate of $4 billion a week until at least mid [February 2022]\". The decision text in the retrieved passage is cut off after \"mid\", and I filled in \"February 2022\" from the Board's discussion (2021-11-02, same source).\n- In that discussion the Board \"reaffirmed its previous decision to continue with the program at the current rate of purchases until mid February 2022, when the program will be reviewed again\" (2021-11-02, same source).\n\n**Yield target**\n- The Board agreed to \"discontinue the yield target altogether\". This was the 10 basis point target for the April 2024 bond (2021-11-02, same source).\n- It gave two reasons: faster-than-expected progress towards the Bank's goals, and a revised inflation outlook (2021-11-02, same source).\n- It also said the target's effectiveness had declined as expectations about inflation and future interest rates shifted (2021-11-02, same source).\n- It planned to review how the yield target had operated and how effective it was in 2022 (2021-11-02, same source).",
+      "elapsed_seconds": 9.7,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference on the key facts: the cash rate target held at 10 basis points, and bond purchases continuing at $4 billion a week until at least mid-February 2022. The extra detail about discontinuing the yield target is consistent with the actual 2 November 2021 decision and does not contradict the reference."
+    },
+    {
+      "id": "q03",
+      "question": "When did the RBA end its government bond purchase program, and what was the cash rate decision at that meeting?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "The RBA ended its government bond purchase program at its February 2022 meeting.\n\n- **Decision to end:** The Board decided to \"cease further purchases of government securities under the bond purchase program, with the final purchases to take place on 10 February 2022\" (2022-02-01, 1 February 2022 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf).\n- **Cash rate decision:** The Board maintained the cash rate target at 10 basis points. It also kept the interest rate on Exchange Settlement balances at zero per cent (2022-02-01, same source).\n- **Reasoning:** Members said that \"since November 2021 better-than-expected progress towards the Board's goals had been made.\" They noted that unemployment was at its lowest level since 2008 and that underlying inflation was in the middle of the target range for the first time since 2014. They concluded it was \"the right time to draw the bond purchase program to a close\" (2022-02-01, same source).",
+      "elapsed_seconds": 4.6,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The answer matches the reference on the key facts: the 1 February 2022 meeting, the decision to cease purchases with the final purchases on 10 February 2022, and the cash rate target held at 10 basis points. The extra details (Exchange Settlement rate at zero, the reasoning on unemployment and inflation) do not contradict the reference and are consistent with the actual minutes."
+    },
+    {
+      "id": "q04",
+      "question": "What was the RBA's first cash rate hike of the 2022 tightening cycle, and what did it bring the cash rate target to?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "The RBA's first hike of the 2022 tightening cycle was at the 3 May 2022 meeting. The Board raised the cash rate target by 25 basis points, from 10 basis points to 35 basis points (0.35%). It also raised the interest rate on Exchange Settlement balances from zero to 25 basis points. (2022-05-03, 3 May 2022 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf)\n\n- **Why it hiked:** The Board judged that its condition for a rise had been met, because inflation was above the 2–3% target band. Inflation wasn't forecast to return to the band until mid-to-late 2024. The Board also saw evidence of more persistent inflationary pressure from limited spare capacity. (2022-05-03, same file)\n- **Size of the hike:** Members considered increases of 15, 25 or 40 basis points. They ruled out 15 basis points because policy was very stimulatory and further rises were highly probable. They also noted that 15 basis points would be inconsistent with the historical practice of moving in increments of at least 25. (2022-05-03, same file)\n- **Bond holdings:** The Board also decided not to reinvest the proceeds of maturing government bonds bought during the pandemic. It had no current plans to sell them. (2022-05-03, same file)\n\nThe hike followed the 5 April 2022 meeting, where the target was held at 10 basis points. (2022-04-05, 5 April 2022 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf)",
+      "elapsed_seconds": 6.3,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's core facts match the reference: the 3 May 2022 meeting, a 25 basis point rise to 35 basis points (0.35%), and the Exchange Settlement balances rate raised to 25 basis points. The extra details (previous rate of 10 bp, bond reinvestment, reasoning) are consistent with the actual minutes and do not contradict the reference."
+    },
+    {
+      "id": "q05",
+      "question": "What rate rise did the RBA Board decide on in September 2022, and what was the unemployment rate at the time?",
+      "category": "decision_and_context",
+      "answerable": true,
+      "agent_answer": "**Rate decision:** At its September 2022 meeting, the Board raised the cash rate target by 50 basis points to 2.35 per cent. It also raised the interest rate on Exchange Settlement balances by 50 basis points to 2.25 per cent (2022-09-06, The decision, 6 September 2022 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf).\n\n**Unemployment rate:** The minutes say the unemployment rate had fallen to 3.4 per cent in July. That was the latest figure available at the meeting (2022-09-06, Domestic economic developments, 6 September 2022 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf). The Board described it as the lowest rate in almost 50 years. It also said continued high job vacancies suggested a further decline in the months ahead (2022-09-06, Considerations for monetary policy, same source).",
+      "elapsed_seconds": 9.6,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The answer matches the reference on the 50 basis point rise to 2.35 per cent and on the 3.4 per cent unemployment rate in July, the lowest in almost 50 years. The extra details (the Exchange Settlement rate of 2.25 per cent and the job vacancies comment) are consistent with the actual minutes and do not contradict the reference."
+    },
+    {
+      "id": "q06",
+      "question": "In October 2022, did the RBA raise rates by 25 or 50 basis points, and what was the resulting cash rate target?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "The RBA raised the cash rate target by **25 basis points** in October 2022. That took the target to **2.60 per cent**. The Board also raised the interest rate on Exchange Settlement balances by 25 basis points to 2.50 per cent. (2022-10-04, 4 October 2022 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf)",
+      "elapsed_seconds": 6.4,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference on the 25 basis point increase, the 2.60 per cent cash rate target, and the 25 basis point rise in the Exchange Settlement balances rate to 2.50 per cent, with no contradictions or fabrications."
+    },
+    {
+      "id": "q07",
+      "question": "What did the RBA Board say about the path to a 'soft landing' in its December 2022 minutes?",
+      "category": "reasoning",
+      "answerable": true,
+      "agent_answer": "In the December 2022 minutes, the Board said the path to a soft landing was a narrow one.\n\n- **Narrow path:** Members \"agreed that the path to achieving the needed decline in inflation and achieving a soft landing for the economy remained a narrow one.\" The Board said it was seeking \"to keep the economy on an even keel as it returns inflation to target.\" It also said uncertainties meant there were \"a range of potential scenarios.\" (2022-12-06, 6 December 2022 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf)\n- **Options in 2023:** Members noted that a range of options for the cash rate could be considered again at upcoming meetings in 2023. (2022-12-06, same source)\n- **Larger increases not ruled out:** The Board \"did not rule out returning to larger increases if the situation warranted.\" (2022-12-06, same source)\n- **Pause possible:** The Board was also \"prepared to keep the cash rate unchanged for a period while it assesses the state of the economy and the inflation outlook.\" (2022-12-06, same source)\n\nThe passage I retrieved was from the \"Considerations for monetary policy\" section. I did not retrieve other sections of the December 2022 minutes.",
+      "elapsed_seconds": 4.5,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's core claim that the Board called the path to a soft landing \"a narrow one\" matches the reference. Its extra details, such as keeping the economy on an even keel and the range of options, are consistent with the minutes and do not contradict the reference."
+    },
+    {
+      "id": "q08",
+      "question": "Why did the RBA raise rates by only 25 basis points rather than 50 at its February 2023 meeting?",
+      "category": "reasoning",
+      "answerable": true,
+      "agent_answer": "The Board weighed a 50 basis point rise against a 25 basis point rise and decided the case for 25 was \"the stronger one\". It acknowledged there were arguments for both options (2023-02-07, Minutes of the Monetary Policy Meeting of the Board).\n\n**Why 50 was considered.** Prices and wages data had tended to exceed expectations. There was a risk that high inflation would persist, and the longer it stayed high, the greater the risk of price and wage expectations moving higher. Persistent inflation would mean higher interest rates and a larger rise in unemployment later (2023-02-07, same minutes).\n\n**Why the Board chose 25:**\n- **Rates had already risen a lot.** \"With interest rates already having been adjusted substantially, there was less need to move by 50 basis points at this meeting\" (2023-02-07).\n- **Inflation was expected to have peaked.** Members thought it likely peaked in the December quarter, though this could only be confirmed in a few months. Headline inflation was below earlier expectations, even though underlying inflation was higher than forecast (2023-02-07).\n- **Consumption was expected to soften.** Many households faced tighter budgets and real incomes were falling in aggregate (2023-02-07).\n- **The outlook was uncertain.** The minutes describe plausible scenarios in which consumption was weaker and inflation fell faster than forecast, and others in which the reverse happened. Monthly meetings gave the Board frequent chances to reassess and adjust (2023-02-07).\n- **More rises were still expected.** The forecasts assumed the cash rate would reach around 3¾ per cent, and members agreed that further increases were likely to be needed over the months ahead (2023-02-07).\n\nThe Board raised the cash rate target by 25 basis points to 3.35 per cent (2023-02-07).",
+      "elapsed_seconds": 9.4,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The answer matches the reference on the key points: the Board weighed 25bp against 50bp, chose 25bp because rates had already been adjusted substantially, and raised the cash rate target to 3.35 per cent. The extra detail it adds, such as the inflation peak, uncertainty, and the 3¾ forecast assumption, is consistent with the minutes and does not contradict the reference."
+    },
+    {
+      "id": "q09",
+      "question": "What did the RBA Board mean when it described monetary policy as being 'in restrictive territory' in March 2023?",
+      "category": "reasoning",
+      "answerable": true,
+      "agent_answer": "The March 2023 minutes don't define \"restrictive territory\". They use the phrase without explaining it, so I can only describe how it was used.\n\n**What the minutes say.** Members \"noted that monetary policy was in restrictive territory and that the economic outlook was uncertain\" (2023-03-07, Considerations for monetary policy, *7 March 2023 Minutes of the Monetary Policy Meeting of the Board*). This came right after the Board's assessment that more tightening was still needed. The minutes say these considerations meant it \"would be appropriate at some point to hold the cash rate steady, to assess more fully the effect of the interest rate increases to date\" (same source).\n\n**How it was used.** The Board seemed to treat the phrase as a reason to slow down and assess:\n- Members discussed the lags in the effect of monetary policy. They also discussed the cumulative impact of the \"significant increase in interest rates since May 2022\".\n- They said these lags \"complicate the task of assessing the outlook for the economy\". They also said the outlook for consumption \"remained a key source of uncertainty\" (same source).\n\n**A reasonable reading, not stated in the minutes.** The phrase seems to mean that the cash rate had risen high enough to be restraining demand, not just easing back from pandemic-era lows. The minutes don't confirm this. They give no numerical estimate of a neutral rate or of how restrictive policy was.",
+      "elapsed_seconds": 7.9,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference on the key points: the phrase \"restrictive territory\" and the \"appropriate at some point to hold the cash rate steady\" language, and it adds no contradictory claims. It omits the 25bp hike to 3.6 per cent, but that is a minor omission and not an error. Its quotations and its clearly labelled interpretation are plausible and do not conflict with the reference."
+    },
+    {
+      "id": "q10",
+      "question": "Why did the RBA pause its rate hikes in April 2023, and what rate was held?",
+      "category": "decision_and_reasoning",
+      "answerable": true,
+      "agent_answer": "**Rate held:** At its 4 April 2023 meeting the Board left the cash rate target unchanged at 3.6 per cent. It also left the Exchange Settlement balances rate at 3.5 per cent (2023-04-04, Minutes of the Monetary Policy Meeting of the Board, \"4 April 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf\").\n\n**Why it paused:**\n- **A pause was flagged a month earlier.** In March the Board said it would be appropriate \"at some point to hold the cash rate steady, to assess more fully the effect of the interest rate increases to date.\" It cited the lags in monetary policy and the cumulative increase in rates since May 2022. It agreed to reconsider the case for a pause at the next meeting (2023-03-07, \"7 March 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf\").\n- **The Board weighed both options.** Members \"recognised the strength of both sets of arguments\" but agreed that \"there was a stronger case to pause at this meeting and reassess the need for further tightening at future meetings.\" They wanted additional data and an updated set of forecasts first (2023-04-04, \"4 April 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf\").\n- **It fit the usual pattern.** The minutes noted that pausing after a run of rate changes \"would be consistent with the typical pattern of policymaking before the pandemic\" (same source).\n- **Some households were under stress.** The minutes noted that parts of the household sector were under financial stress and would have to scale back spending. The Board still thought it possible to bring inflation down in a timely way while keeping the economy on an even keel, but called that path \"a narrow one\" (same source).\n- **Banking-sector stability was not a factor.** Members agreed that the strength of the Australian banking sector meant financial system resilience was not a consideration in the decision (same source).\n- **It was not the end of tightening.** The minutes said it was important to be clear that policy \"may need to be tightened at subsequent meetings\" and that the pause was meant \"to allow time to gather more information\" (same source).\n\n**What followed:** In May 2023 the Board raised the cash rate target to 3.85 per cent (2023-05-02, \"2 May 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf\").",
+      "elapsed_seconds": 13.2,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant matches the reference on the held rate (3.6 per cent) and on the reasoning (pause to gather more information, with policy that \"may need to be tightened at subsequent meetings\"), and its extra details (ES rate of 3.5%, May hike to 3.85%) are accurate and do not contradict the reference."
+    },
+    {
+      "id": "q11",
+      "question": "What rate decision did the RBA make in June 2023 and what were the main arguments for and against it?",
+      "category": "decision_and_reasoning",
+      "answerable": true,
+      "agent_answer": "**Decision:** The Board raised the cash rate target by 25 basis points to 4.1 per cent. It also raised the interest rate on Exchange Settlement balances by 25 basis points to 4 per cent. (2023-06-06, Minutes of the Monetary Policy Meeting of the Board, \"6 June 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf\")\n\n**Options:** Members considered two options: raising by 25 basis points or holding the rate unchanged. They said the arguments were \"finely balanced\" but judged the case to raise was the stronger one. (2023-06-06, same source)\n\n**Arguments for raising**\n- Inflation risks had shifted somewhat to the upside, and the return to target was already drawn out. Inflation was projected to stay above target for several years. It was expected to take longer to return to target in Australia than in some other countries. (2023-06-06, same source)\n- Inflation had passed its peak but was still well above target. It was forecast to return to the top of the target range only by mid-2025. There was little spare capacity, and unemployment was very low. (2023-06-06, same source)\n- The Fair Work Commission's award wage increase of 5.75 per cent was higher than the staff forecasts had assumed. (2023-06-06, same source)\n- A further rise would give more confidence that inflation would return to target. The minutes said prolonged high inflation would distort the economy and worsen cost-of-living pressures, hurting low-income people most. It would also lead to even higher interest rates later and a worse labour market outlook. (2023-06-06, same source)\n\n**Arguments for holding**\n- The economy was slowing, and earlier rate rises might slow it more sharply than expected. Consumption growth was already weak, especially per capita. (2023-06-06, same source)\n- Real disposable incomes were falling, especially for home loan borrowers, and many renters were under financial strain. (2023-06-06, same source)\n- The size of the rate increases over the preceding year, lags in how policy takes effect, and many fixed-rate loans due to expire in the coming months would tighten financial conditions further. (2023-06-06, same source)\n\n**Acknowledged uncertainty:** In deciding to raise, members acknowledged the considerable uncertainty about household spending and the financial stress on some households. They reaffirmed their determination to return inflation to target. (2023-06-06, same source)",
+      "elapsed_seconds": 10.7,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference on the date, the 25 basis point rise to 4.1 per cent, the main arguments on each side, and the Board's judgment that raising was stronger; the extra details (ES rate at 4 per cent, the 5.75 per cent award wage rise) are consistent with the actual minutes and do not contradict the reference."
+    },
+    {
+      "id": "q12",
+      "question": "In July 2023, why did the Board decide to hold the cash rate steady, and what did it say about mortgage payments?",
+      "category": "decision_and_reasoning",
+      "answerable": true,
+      "agent_answer": "**Why the Board held the cash rate (4 July 2023)**\n\n- The Board cited two things: \"the uncertainty around the outlook and the significant increase in interest rates to date.\" It agreed to hold the cash rate steady and reassess at the August meeting (2023-07-04, Considerations for monetary policy, 4 July 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf).\n- It did not rule out further increases. Members said \"some further tightening of monetary policy may be required to bring inflation back to target within a reasonable timeframe,\" but that this depended on how the economy and inflation evolved (same source).\n- By August the Board would have more data on inflation, the global economy, the labour market and household spending. It would also have updated staff forecasts and a revised assessment of the risks (same source).\n\n**What it said about mortgage payments**\n\n- Scheduled mortgage payments had risen to about a historical peak of 9.4 per cent of household disposable income in May (2023-07-04, Domestic financial markets, 4 July 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf).\n- Scheduled payments would keep rising even with no further cash rate increases. Borrowers on fixed-rate loans were rolling onto higher variable rates, and earlier increases in lending rates were still flowing through (same source).\n- The share of borrowers rolling off fixed rates was high and would stay high for some months. It would then decline markedly into 2024 (same source).\n\nThe July passages I retrieved give only these reasons for the hold. They may not be the full text of the Board's deliberations.",
+      "elapsed_seconds": 10.1,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference on the hold, the uncertainty, the lagged effect of past tightening, the possibility of further tightening, and mortgage payments at a historical peak share of income. It omits the 4.1 per cent figure and the household consumption uncertainty, but it adds nothing that contradicts the reference."
+    },
+    {
+      "id": "q13",
+      "question": "What was the RBA's cash rate decision in September 2023?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "At its 5 September 2023 meeting, the Board left the cash rate target unchanged at 4.1 per cent. It also left the interest rate on Exchange Settlement balances at 4 per cent (2023-09-05, The decision, 5 September 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf).",
+      "elapsed_seconds": 4.7,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference: cash rate target unchanged at 4.1 per cent and the Exchange Settlement balances rate at 4 per cent. The 5 September 2023 meeting date it adds is accurate and doesn't contradict anything."
+    },
+    {
+      "id": "q14",
+      "question": "What was the cash rate target in May 2024, and had it changed from the previous meeting?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "The cash rate target was **4.35 per cent** after the May 2024 meeting, and it had not changed from the previous meeting.\n\n- **May 2024 decision:** The Board \"decided to leave the cash rate target unchanged at 4.35 per cent, and the interest rate on Exchange Settlement balances unchanged at 4.25 per cent\" (2024-05-07, 7 May 2024 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf).\n- **Previous meeting:** The Board also left the target unchanged at 4.35 per cent at the April meeting (2024-04-02, 2 April 2024 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf).\n\n**Reasoning in May:** Members judged that \"the case to leave the cash rate unchanged at this meeting was the stronger one\". They also said that \"the flow of information since the previous meeting had increased the risks of inflation staying above target for longer\" (2024-05-07, 7 May 2024 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf). They considered raising the rate but judged that the staff forecasts still showed a credible path back to target (same source).",
+      "elapsed_seconds": 7.3,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference on the key facts: the cash rate target was 4.35 per cent, unchanged, and the Exchange Settlement rate was 4.25 per cent. The added details about the April meeting and the Board's reasoning do not contradict the reference and appear consistent with the actual minutes."
+    },
+    {
+      "id": "q15",
+      "question": "What did the Board say in November 2024 about future changes to the cash rate target?",
+      "category": "reasoning",
+      "answerable": true,
+      "agent_answer": "At its 5 November 2024 meeting, the Board left the cash rate target at 4.35 per cent and gave no commitment on future moves. Everything below comes from the minutes of that meeting (2024-11-05, Minutes of the Monetary Policy Meeting of the Board).\n\n**Overall stance**\n- Members agreed it was \"not possible to rule anything in or out in relation to future changes in the cash rate target\". They said they would rely on the data and their evolving assessment of risks. Returning inflation to target remained the Board's highest priority.\n- They saw \"no immediate need to change the cash rate target\". They also said it was important to be ready to adjust policy as the outlook evolves. They considered what might justify either a future change or holding the rate for a prolonged period.\n- They agreed policy needed to stay sufficiently restrictive until the Board is confident inflation is moving sustainably towards target. They also wanted the statement to convey vigilance to upside risks to inflation.\n\n**Conditions that could lead to a cut**\n- Consumption proving persistently and materially weaker than forecast, and likely to lower inflation significantly.\n- Inflation falling materially faster than forecast. Examples given were rental markets coming into better balance, or energy rebates having a broader effect on inflation expectations or price indexation. Members said they would need to see more than one good quarterly inflation outcome to be confident the decline was sustainable.\n- Labour market conditions easing much more sharply than expected, for example if firms that have been hoarding labour unwind it. That would lower inflation faster and warrant a looser stance.\n\n**Conditions that could keep rates on hold longer**\n- A sharper recovery in consumption than forecast.\n- Materially stronger demand putting more upward pressure on underlying inflation, which would require the current setting to stay in place for an extended period.\n- The Board forming the view that policy was less restrictive than judged. It said it would watch credit growth, banks' willingness to lend and asset prices for signs of this.\n\n**Forecast and market context**\n- Staff forecasts assumed, based on market pricing, that the cash rate would stay at its current level for a number of months. It would then be lowered several times in 2025 and 2026. The minutes describe this as a technical assumption, not a Board commitment.\n- Staff did not see inflation returning sustainably to target until 2026. Underlying (trimmed mean) inflation was still judged too high.\n- Market pricing suggested the first cut would come from around mid-2025, a few months later than at the September meeting. Market economists expected the first cut in the first half of 2025.",
+      "elapsed_seconds": 9.3,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer includes the key quote (\"not possible to rule anything in or out\"), the reliance on data and an evolving assessment of risks, and the unchanged 4.35 per cent rate, and the additional details do not contradict the reference."
+    },
+    {
+      "id": "q16",
+      "question": "What was the cash rate target at the end of 2024, after the December meeting?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "The cash rate target was **4.35 per cent** at the end of 2024. At the December meeting, the Board \"decided to leave the cash rate target unchanged at 4.35 per cent, and the interest rate on Exchange Settlement balances unchanged at 4.25 per cent\" (2024-12-10, 10 December 2024 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf).",
+      "elapsed_seconds": 5.6,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference: the cash rate target was left unchanged at 4.35 per cent and the Exchange Settlement balances rate at 4.25 per cent at the 10 December 2024 meeting, with nothing contradicted or fabricated."
+    },
+    {
+      "id": "q17",
+      "question": "When did the RBA first cut the cash rate after its 2022-2023 tightening cycle, and did it commit to further cuts?",
+      "category": "decision_and_reasoning",
+      "answerable": true,
+      "agent_answer": "**First cut:** The RBA first cut the cash rate on 18 February 2025. It reduced the target by 25 basis points to 4.10 per cent. It also lowered the Exchange Settlement balances rate by 25 basis points to 4.00 per cent (2025-02-18, Minutes of the Monetary Policy Meeting of the Board, \"18 February 2025 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf\").\n\n**Did it commit to further cuts?** I found no commitment in the passages I retrieved. I could not retrieve the February 2025 passage on forward guidance, so I can't say what that statement said. Later minutes consistently describe a data-dependent approach:\n\n- **May 2025:** The Board cut again, to 3.85 per cent. Members preferred \"to move cautiously and predictably when withdrawing some of the current policy restriction\". They said \"future decisions will be guided by the incoming data and the evolving assessment of risks\" (2025-05-20, \"20 May 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf\").\n- **July 2025:** The minutes refer to the February and May cuts. They say it \"might be prudent to lower interest rates cautiously\" (2025-07-08, \"8 July 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf\").\n- **August 2025:** The Board cut again, to 3.6 per cent. It said that, based on what it knew at the time, achieving its goals \"appeared likely to require some further reduction in the cash rate over the coming year\". That is an assessment, not a firm commitment. Members also said it was \"not yet possible to judge\" the pace of future cuts and stressed being \"guided by\" the data (2025-08-12, \"12 August 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf\").\n- **September to December 2025:** The Board held the rate at 3.60 per cent. It described its decisions as needing to \"remain cautious and data dependent\" (2025-09-30 and 2025-11-04, \"30 September 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf\" and \"4 November 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf\").",
+      "elapsed_seconds": 12.6,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant correctly gives 18 February 2025, a 25 bp cut to 4.10%, and says it found no commitment to further cuts, which is consistent with the reference, though it hedges on the February forward guidance and adds later-meeting details that don't contradict it."
+    },
+    {
+      "id": "q18",
+      "question": "What rate cut did the RBA make in May 2025, and what was the resulting cash rate?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "In May 2025, the RBA cut the cash rate target by 25 basis points, which took it to 3.85 per cent. (2025-05-20, 20 May 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf)",
+      "elapsed_seconds": 2.7,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference: a 25 basis point cut to 3.85 per cent in May 2025, and the cited source is the 20 May 2025 minutes."
+    },
+    {
+      "id": "q19",
+      "question": "Was the RBA's July 2025 decision to hold rates unanimous?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "No. The July 2025 hold was a split decision.\n\n- The Board \"decided by majority (six in favour, three against) to leave the cash rate target unchanged at 3.85 per cent\" (2025-07-08, 8 July 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf).\n- A majority judged that holding was the stronger case. They believed that \"lowering the cash rate a third time within the space of four meetings would be unlikely to be consistent with the strategy of easing monetary policy in a cautious and gradual manner\" (2025-07-08, same source).\n- A minority wanted a 25 basis point cut. They put more weight on downside risks, namely slowing global growth and subdued domestic GDP growth. They argued that underlying inflation might moderate faster than the May projections assumed (2025-07-08, same source).\n- All members agreed that the outlook warranted some further reduction in interest rates over time. The disagreement was about timing (2025-07-08, same source).\n- At this meeting the Board also agreed to disclose an unattributed record of votes at this and future meetings (2025-07-08, same source).",
+      "elapsed_seconds": 9.7,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant correctly says the decision was not unanimous, with a six-to-three majority holding the cash rate at 3.85 per cent, and its added details about the minority view and the unattributed vote disclosure do not contradict the reference."
+    },
+    {
+      "id": "q20",
+      "question": "What happened to the cash rate target at the RBA's August 2025 meeting?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "At its 11–12 August 2025 meeting, the Board lowered the cash rate target by 25 basis points to 3.6 per cent. The decision was unanimous (2025-08-12, The decision, 12 August 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf).\n\nThat followed the previous cut to 3.85 per cent in May 2025 (2025-05-20, 20 May 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf). The Board then held the rate at 3.60 per cent at its 30 September 2025 meeting (2025-09-30, 30 September 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf).",
+      "elapsed_seconds": 5.4,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's core claim matches the reference: a unanimous 25 basis point cut to 3.6 per cent in August 2025. The extra context is consistent with the actual record, since the cut in May 2025 took the rate to 3.85 per cent and the September 2025 meeting held it at 3.60 per cent."
+    },
+    {
+      "id": "q21",
+      "question": "What was the RBA's cash rate decision in December 2025?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "The RBA left the cash rate target unchanged at 3.60 per cent at its December 2025 meeting, and the decision was unanimous (2025-12-09, 9 December 2025 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf).\n\nThe minutes give these reasons:\n- **Inflation:** The September quarter CPI release had been \"well above the forecast published in the August Statement\". Members judged that \"recent data suggested the risks to inflation had tilted to the upside\". They also said it was too early to tell whether inflation would be more persistent than they had assumed in November, partly because of uncertainty about how reliable the new data series was (2025-12-09, same source).\n- **Excess demand:** The economy appeared to be operating with a degree of excess demand. It was unclear whether financial conditions were restrictive enough to bring demand and supply back into balance. Members discussed circumstances in which \"an increase in the cash rate might need to be considered at some point in the coming year\" (2025-12-09, same source).\n- **Next steps:** The Board agreed to leave the rate unchanged and \"assess at future meetings how their judgements about the key considerations had evolved\" (2025-12-09, same source).\n- **Market pricing:** Markets had moved from pricing in a 25 basis point cut by the end of 2026 to pricing in a 25 basis point increase (2025-12-09, same source).\n\nThe RBA then raised the cash rate target by 25 basis points at its next meeting, on 3 February 2026 (2026-02-03, 3 February 2026 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf).",
+      "elapsed_seconds": 8.9,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's core claim, that the RBA held the cash rate at 3.60 per cent unanimously in December 2025, matches the reference answer, and the added details on reasoning and the later hike do not contradict it."
+    },
+    {
+      "id": "q22",
+      "question": "Did the RBA raise or cut rates in February 2026, and was the decision unanimous?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "The RBA raised the cash rate in February 2026, and the decision was unanimous.\n\nThe Board \"decided unanimously to raise the cash rate target by 25 basis points to 3.85 per cent\" (2026-02-03, 3 February 2026 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf). The previous rate was 3.60%. That is the level the Board held unanimously at its September, November and December 2025 meetings.\n\nThe minutes give these reasons for the rise:\n- Members judged that part of the rise in inflation would persist because of greater capacity pressure. They also judged that financial conditions were not restrictive enough to bring inflation back to target within a reasonable period (2026-02-03, same source).\n- The staff forecast had inflation staying above the midpoint of the target range for at least another two years (2026-02-03, same source).\n- Members agreed that the downside risks to full employment had abated (2026-02-03, same source).",
+      "elapsed_seconds": 4.8,
+      "retrieval_hit": false,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference on the key facts: a unanimous 25 basis point rise to 3.85 per cent. The added details (previous rate of 3.60%, reasons for the rise) do not contradict the reference."
+    },
+    {
+      "id": "q23",
+      "question": "Was the RBA Board unanimous in its March 2026 rate decision, and what was decided?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "No. The Board's March 2026 decision was by majority, not unanimous.\n\n- **Decision:** The Board raised the cash rate target to 4.10 per cent from 3.85 per cent. Five members voted in favour. Four voted to leave it unchanged at 3.85 per cent (2026-03-17, Minutes of the Monetary Policy Board Meeting, 17 March 2026 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf).\n\n- **Why the majority voted to raise:**\n  - They judged that inflation was already projected to stay above target for some time, and that the risks had tilted further to the upside.\n  - Higher oil prices from the Middle East conflict added to those risks.\n  - They also noted widespread capacity pressures and that downside risks to the labour market had abated.\n  - They were not convinced that financial conditions were restrictive enough (same source, 2026-03-17).\n\n- **Why the minority voted to hold:** They agreed that inflation was too high and that further tightening would probably be needed. But they thought uncertainty from the Middle East conflict meant waiting for more information was worth the cost (same source, 2026-03-17).\n\n- **Outlook:** Members agreed that further tightening would likely be needed in the near term. They said the future path of the cash rate could not be predicted with confidence (same source, 2026-03-17).",
+      "elapsed_seconds": 8.7,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's answer matches the reference on the key facts: the decision was not unanimous, the vote was five to four, and the cash rate rose to 4.10 per cent from 3.85 per cent, with the dissenters preferring to hold. The extra reasoning it adds does not contradict the reference."
+    },
+    {
+      "id": "q24",
+      "question": "What external event influenced the RBA's May 2026 rate decision, and what was decided?",
+      "category": "decision_and_reasoning",
+      "answerable": true,
+      "agent_answer": "**External event:** The conflict in the Middle East, and the oil supply disruption and fuel price rise that came with it. The minutes say staff prepared two adverse scenarios because of \"heightened uncertainty around the duration, severity and effects of the conflict in the Middle East\" (2026-05-05, 5 May 2026 Minutes of the Monetary Policy Board Meeting). They also say the conflict and higher fuel prices contributed to a sharp fall in consumer confidence (same meeting).\n\nThe staff's baseline forecasts assumed the conflict would be resolved and oil prices would then recede gradually, but to a level \"well above\" the pre-conflict level (2026-05-05). Underlying inflation was forecast to stay above 3 per cent until late 2027. It was projected to return to 2½ per cent only in mid-2028 (2026-05-05).\n\n**Decision:** The Board raised the cash rate target by 25 basis points, from 4.10 to 4.35 per cent. The vote was by majority, with eight members in favour and one voting to leave the rate unchanged at 4.10 per cent (2026-05-05, The decision, 5 May 2026 Minutes).\n\n**Reasoning for the rise:**\n- Most members judged that underlying inflation was projected to stay above target for an extended period across a range of conflict scenarios. They were not confident that a 4.1 per cent cash rate would be enough to contain the risks (2026-05-05).\n- Staff assessed that capacity pressures remained tight. They also said financial conditions might not be restrictive enough to return inflation to target at the old rate (2026-05-05).\n- Some firms were considering raising prices, and some expected workers to seek higher wages. Members saw this as a risk that inflation expectations could become de-anchored (2026-05-05).\n- The one dissenting member judged that capacity pressures before the conflict were somewhat less than staff had assessed. That member preferred to hold while waiting for evidence on how the economy responded, which was consistent with other central banks (2026-05-05).\n\nThe Board said the decision would give it \"space to see how the conflict in the Middle East develops\" (2026-05-05).",
+      "elapsed_seconds": 9.7,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The assistant identifies the Middle East conflict and its effect on fuel prices, and states that the Board raised the cash rate target to 4.35 per cent by a vote of eight to one, which matches the reference. The extra details (25 basis points from 4.10, the reasoning, and the dissent) are consistent with the reference and do not contradict it."
+    },
+    {
+      "id": "q25",
+      "question": "What was the RBA's cash rate decision at its June 2026 meeting?",
+      "category": "decision",
+      "answerable": true,
+      "agent_answer": "At its 15–16 June 2026 meeting, the RBA Board decided unanimously to leave the cash rate target unchanged at 4.35 per cent (2026-06-16, 16 June 2026 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf).\n\nThe minutes also said markets widely expected this hold. Market pricing implied about a 50% chance of a further 25 basis point increase by the end of 2026 (2026-06-16, same source).",
+      "elapsed_seconds": 6.0,
+      "retrieval_hit": true,
+      "judge_correct": true,
+      "judge_rationale": "The assistant's core claim (a unanimous decision to hold the cash rate target at 4.35 per cent) matches the reference. The extra details about market expectations and pricing are not in the reference, but they don't contradict it and are plausibly drawn from the minutes."
+    },
+    {
+      "id": "u01",
+      "question": "What did the RBA Governor have for breakfast on the morning of the June 2023 board meeting?",
+      "category": "unanswerable",
+      "answerable": false,
+      "agent_answer": "I don't know. I searched the minutes for the June 2023 meeting (6 June 2023), and nothing in them mentions what the Governor ate for breakfast. The only passage retrieved from that meeting was the title line: \"Minutes of the Monetary Policy Meeting of the Reserve Bank Board Sydney – 6 June 2023\" (2023-06-06, 6 June 2023 _ Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf). The minutes cover the Board's economic assessment and policy decisions, not personal details like this.\n\nI can look up what the Board discussed or decided at that meeting if that would help.",
+      "elapsed_seconds": 4.1,
+      "abstained": true
+    },
+    {
+      "id": "u02",
+      "question": "What was the exact closing price of the ASX 200 on the day of every RBA meeting in 2023?",
+      "category": "unanswerable",
+      "answerable": false,
+      "agent_answer": "I don't know. The RBA minutes don't give daily ASX 200 closing prices, so I can't give you those figures. I searched them and found only general comments on equity markets. For example, the 6 December 2022 minutes say equity prices had risen since early October (2022-12-06, Minutes of the Monetary Policy Meeting of the Board). None of the passages has an index level for any 2023 meeting date.\n\nI won't estimate the closing prices from memory, because they would be unreliable. You can get exact closes from S&P Dow Jones Indices, the ASX website, or a market data provider such as Bloomberg, Refinitiv or Yahoo Finance.\n\nI can also pull what the minutes say about equity market conditions at each 2023 meeting, or list the 2023 meeting dates and the cash rate decisions.",
+      "elapsed_seconds": 5.8,
+      "abstained": true
+    },
+    {
+      "id": "u03",
+      "question": "Which RBA Board member's favourite restaurant in Sydney is mentioned in the minutes?",
+      "category": "unanswerable",
+      "answerable": false,
+      "agent_answer": "I don't know. The passages I retrieved don't mention any Board member's favourite restaurant in Sydney. The only matches were the meeting headings, which give \"Sydney\" as the meeting location. The minutes cover monetary policy, so I wouldn't expect them to include this kind of detail.",
+      "elapsed_seconds": 2.6,
+      "abstained": true
+    },
+    {
+      "id": "u04",
+      "question": "What is the RBA's current cash rate decision for its next meeting in 2027?",
+      "category": "unanswerable",
+      "answerable": false,
+      "agent_answer": "I don't know. The minutes I can search contain no decision for a 2027 meeting. That meeting hasn't happened yet, so there's no decision to report.\n\nThe most recent minutes I found are from 16 June 2026. They say the cash rate was widely expected to stay on hold at that meeting. They also describe what markets and economists expected afterwards:\n- Market pricing implied a 50 per cent chance of a further 25 basis point increase by the end of 2026.\n- Some economists expected another rise in 2026.\n- Others expected the rate to stay on hold in 2026 and then be eased from around mid-2027.\n\n(2026-06-16, 16 June 2026 _ Minutes of the Monetary Policy Board Meeting _ RBA.pdf)\n\nThese are market and economist expectations, not RBA decisions or guidance. The RBA Board decides at each meeting, and its decisions are published after the meeting.",
+      "elapsed_seconds": 6.9,
+      "abstained": true
+    },
+    {
+      "id": "u05",
+      "question": "How many pages long was the printed transcript of the RBA's internal staff briefing before the May 2024 meeting?",
+      "category": "unanswerable",
+      "answerable": false,
+      "agent_answer": "I don't know. The retrieved passages from the May 2024 minutes (2024-05-07, Minutes of the Monetary Policy Meeting of the Board _ RBA.pdf) don't mention a printed transcript of an internal staff briefing or its page length. The minutes cover the Board's discussion and judgements. They don't describe any such transcript.",
+      "elapsed_seconds": 5.0,
+      "abstained": true
+    }
+  ]
+}
