@@ -52,6 +52,37 @@ def extract_text(message) -> str:
     ).strip()
 
 
+class Conversation:
+    """A multi-turn session that keeps message history across calls to `ask`.
+
+    `agent.run.ask()` (used by the single-shot CLI and `eval/run_eval.py`) is
+    intentionally stateless - each call is one independent question. This
+    class is for the interactive REPL, where follow-up questions like "what
+    about the meeting before that?" should resolve against prior turns.
+    """
+
+    def __init__(self, agent):
+        self.agent = agent
+        self.history: list = []
+
+    def ask(self, question: str) -> str:
+        """Run one turn, appending to and updating the conversation history.
+
+        On failure, the history is left unchanged (the failed turn is not
+        recorded), so a later retry doesn't replay a broken exchange.
+
+        Args:
+            question: The user's natural-language question.
+
+        Returns:
+            The agent's final response text for this turn.
+        """
+        turn_input = self.history + [HumanMessage(content=question)]
+        result = self.agent.invoke({"messages": turn_input})
+        self.history = result["messages"]
+        return extract_text(self.history[-1])
+
+
 def main() -> None:
     """CLI entry point: answer a single question from argv, or loop interactively."""
     try:
@@ -66,6 +97,8 @@ def main() -> None:
         return
 
     print("AusEcon agent ready. Ask a question about RBA monetary policy (Ctrl+C to exit).")
+    print("Follow-up questions can refer back to earlier turns in this session.")
+    conversation = Conversation(agent)
     while True:
         try:
             question = input("\n> ")
@@ -75,7 +108,7 @@ def main() -> None:
         if not question.strip():
             continue
         try:
-            print(ask(agent, question))
+            print(conversation.ask(question))
         except Exception:
             logger.exception("Agent failed to answer question: %r", question)
             print("Sorry, something went wrong answering that question.")
