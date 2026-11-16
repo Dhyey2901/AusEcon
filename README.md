@@ -4,7 +4,14 @@ An Agentic RAG system over Reserve Bank of Australia (RBA) monetary policy docum
 
 ## What it does
 
-AusEcon combines hybrid retrieval over 53 RBA Monetary Policy Board minutes (2021–2025) with a LangGraph ReAct agent that can also pull live macro data (CPI, unemployment, GDP) from the ABS API and reason about rate-change impacts — all answers are evaluated for faithfulness and relevance with RAGAS.
+AusEcon combines hybrid retrieval over 53 RBA Monetary Policy Board minutes (2021-02-02 to 2026-06-16) with a LangGraph ReAct agent and reason about rate-change impacts — answers are evaluated with an LLM-as-judge pipeline against a hand-checked ground truth set.
+
+### Corpus stats (Phase 1, real numbers)
+
+- 53 source PDFs parsed, 53 successfully chunked (0 failures)
+- 2,258 chunks, average 631 chars/chunk
+- Date range: 2021-02-02 to 2026-06-16
+- Embeddings: BAAI/bge-m3 (1024-dim), indexed in ChromaDB (persistent) + BM25 (rank-bm25)
 
 ## Tech stack
 
