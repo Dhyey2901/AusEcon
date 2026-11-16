@@ -153,5 +153,11 @@ pytest tests/ -v
   (see `requirements.txt` for exact versions and reasoning).
 - **No reranking model**: retrieval fusion is RRF over dense + BM25 only; no cross-encoder
   reranker was added on top.
+- **System prompt is not leak-proof**: the agent will disclose its system prompt if asked
+  directly, and in at least one manual test, the "verbatim" text it returned included a
+  hallucinated fragment unrelated to the actual prompt. Don't rely on this agent to keep its
+  instructions confidential, and don't demo prompt-injection-hardening as a feature - it isn't
+  one. (Multi-turn conversation memory - the other gap found during manual boundary testing -
+  is implemented; see `agent/run.py`'s `Conversation` class.)
 - **Single-threaded eval**: `run_eval.py` runs questions sequentially; a 30-question run takes
   a few minutes and a small amount of real API spend.
