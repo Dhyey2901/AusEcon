@@ -34,15 +34,23 @@ Known limitations.
 |---|---|---|
 | Answer correctness (LLM-as-judge vs. hand-verified reference) | **100%** (25/25) | 25 answerable questions |
 | Abstention rate on unanswerable questions | **100%** (5/5) | 5 deliberately unanswerable questions |
-| Standalone retrieval hit rate (single raw-question query, top-5) | **36%** (9/25) | 25 answerable questions |
+| Standalone retrieval hit rate (single raw-question query, top-5) | **88%** (22/25) | 25 answerable questions |
 
-The retrieval hit-rate number looks low next to 100% answer correctness, and that gap is a real,
-reportable finding, not a bug: many RBA "hold rate unchanged" decisions are phrased almost
-identically across different meetings, so a single naive top-5 query on the raw question text
-often can't disambiguate the exact meeting date from text alone. The agent still gets the right
-answer because it reformulates more targeted queries inside its ReAct loop (and sometimes issues
-multiple tool calls) rather than relying on one blind retrieval pass - which this standalone
-diagnostic check doesn't capture. Re-run with `python -m eval.run_eval`.
+The retrieval hit-rate number started at 36% - many RBA "hold rate unchanged" decisions are
+phrased almost identically across different meetings, so a single naive top-5 query on the raw
+question text often couldn't disambiguate the exact meeting date from wording alone. Two fixes
+closed most of that gap: (1) a `[RBA Minutes - D Month YYYY]` header is prepended to each chunk's
+text before both embedding and BM25 indexing, so the meeting date is a direct textual signal to
+both retrievers, not just metadata; (2) `hybrid_search` now parses a month/year or bare year
+mentioned in the query itself (e.g. "June 2023") and applies it as a metadata filter before
+ranking, in `agent/tools/retrieval.py`'s `_extract_date_hint`. That took standalone hit rate from
+36% to 88%. The remaining 3 misses are genuinely hard for a heuristic: one question names two
+years ("2022-2023 tightening cycle", ambiguous on purpose), and two use indirect phrasing
+("the December meeting", "first hike of the 2022 cycle") with no adjacent explicit month+year to
+parse. The agent's actual answer correctness was 100% even before this fix, because its ReAct loop
+reformulates queries and sometimes issues multiple tool calls rather than relying on one blind
+retrieval pass - which this standalone diagnostic measures, but the agent itself doesn't rely on.
+Re-run with `python -m eval.run_eval`.
 
 ## Tech stack
 
@@ -143,9 +151,11 @@ pytest tests/ -v
   demonstrate the agent works, but not as rigorous as RAGAS would be.
 - **Only 1 of 4 originally-planned tools omitted**: the ABS live macro data tool
   (`fetch_live_macro_data`) was never implemented.
-- **Standalone retrieval hit-rate is a conservative, partial signal** (36%, see Eval results
+- **Standalone retrieval hit-rate is a conservative, partial signal** (88%, see Eval results
   above) - it measures one blind top-5 query per question, not what the agent's actual
-  multi-step retrieval achieves (100% answer correctness). Don't read it as "retrieval is bad."
+  multi-step retrieval achieves (100% answer correctness). The 3 remaining misses are queries
+  with ambiguous or indirect date phrasing that the date-hint heuristic in `retrieval.py` can't
+  resolve (see Eval results for detail).
 - **Dependency versions were bumped off the original plan**: `langgraph`/`langchain-anthropic`/
   `langchain-core` were originally pinned to late-2024 releases that predate Claude's current
   "adaptive thinking" response format and corrupt multi-turn tool conversations when replaying

@@ -7,6 +7,7 @@ that merges dense and sparse rankings with reciprocal rank fusion (RRF).
 
 from __future__ import annotations
 
+import calendar
 import logging
 import pickle
 import re
@@ -48,6 +49,46 @@ class RetrievedChunk:
 def tokenize(text: str) -> list[str]:
     """Lowercase, alphanumeric tokenizer matching the one used at index time."""
     return _TOKEN_RE.findall(text.lower())
+
+
+_MONTH_NAMES = {
+    "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
+    "july": 7, "august": 8, "september": 9, "october": 10, "november": 11, "december": 12,
+}
+_MONTH_YEAR_RE = re.compile(
+    r"\b(" + "|".join(_MONTH_NAMES) + r")\s+((?:19|20)\d{2})\b", re.IGNORECASE
+)
+_BARE_YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
+
+
+def _extract_date_hint(query: str) -> tuple[str, str] | None:
+    """Parse a month/year or bare year mentioned in `query` into a date range.
+
+    Many eval questions and real user queries name a specific meeting
+    ("June 2023", "October 2022"). Resolving that directly to a date range
+    lets retrieval filter to the right meeting instead of relying on wording
+    alone to disambiguate near-identical "hold rate" boilerplate across dates.
+
+    Args:
+        query: The natural-language search query.
+
+    Returns:
+        An (start_date, end_date) ISO tuple covering the named month or year,
+        or None if no date is mentioned.
+    """
+    month_match = _MONTH_YEAR_RE.search(query)
+    if month_match:
+        month = _MONTH_NAMES[month_match.group(1).lower()]
+        year = int(month_match.group(2))
+        last_day = calendar.monthrange(year, month)[1]
+        return f"{year:04d}-{month:02d}-01", f"{year:04d}-{month:02d}-{last_day:02d}"
+
+    years = set(_BARE_YEAR_RE.findall(query))
+    if len(years) == 1:
+        year = next(iter(years))
+        return f"{year}-01-01", f"{year}-12-31"
+
+    return None
 
 
 @lru_cache(maxsize=1)
@@ -177,8 +218,14 @@ def hybrid_search(
         Up to `top_k` `RetrievedChunk` objects, best match first. Empty if no
         chunk is retrieved by either retriever.
     """
-    dense_ids = _dense_search(query, candidate_k, meeting_date_range)
-    sparse_ids = _sparse_search(query, candidate_k, meeting_date_range)
+    effective_range = meeting_date_range
+    if effective_range is None:
+        effective_range = _extract_date_hint(query)
+        if effective_range:
+            logger.info("Detected date hint %s in query %r", effective_range, query)
+
+    dense_ids = _dense_search(query, candidate_k, effective_range)
+    sparse_ids = _sparse_search(query, candidate_k, effective_range)
     fused = _reciprocal_rank_fusion([dense_ids, sparse_ids])
 
     if not fused:
@@ -197,8 +244,8 @@ def hybrid_search(
         if chunk_id not in by_id:
             continue
         doc, meta = by_id[chunk_id]
-        if meeting_date_range is not None:
-            start, end = meeting_date_range
+        if effective_range is not None:
+            start, end = effective_range
             if not (start <= meta["meeting_date"] <= end):
                 continue
         results.append(

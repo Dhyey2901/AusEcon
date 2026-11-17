@@ -19,6 +19,7 @@ import logging
 import pickle
 import re
 import time
+from datetime import datetime
 from pathlib import Path
 
 import chromadb
@@ -65,6 +66,25 @@ def load_chunks(chunks_path: Path) -> list[dict]:
     return chunks
 
 
+def contextualize(chunk: dict) -> str:
+    """Prepend a human-readable date header to a chunk's text before indexing.
+
+    Many RBA "hold rate unchanged" meetings are phrased almost identically, so
+    a raw-text embedding or BM25 match on wording alone often can't tell two
+    meetings apart. Putting the meeting date in the indexed text itself (both
+    dense and sparse) gives both retrievers a direct textual signal to key on.
+
+    Args:
+        chunk: A chunk dict with "meeting_date" (ISO "YYYY-MM-DD") and "text".
+
+    Returns:
+        The chunk text prefixed with a "[RBA Minutes - D Month YYYY]" header.
+    """
+    dt = datetime.strptime(chunk["meeting_date"], "%Y-%m-%d")
+    human_date = f"{dt.day} {dt.strftime('%B %Y')}"
+    return f"[RBA Minutes - {human_date}]\n{chunk['text']}"
+
+
 def tokenize(text: str) -> list[str]:
     """Lowercase, alphanumeric tokenizer used for the BM25 sparse index.
 
@@ -92,7 +112,7 @@ def embed_chunks(chunks: list[dict], model_name: str = EMBEDDING_MODEL) -> list[
     model = SentenceTransformer(model_name)
     logger.info("Model loaded in %.1fs", time.time() - t0)
 
-    texts = [c["text"] for c in chunks]
+    texts = [contextualize(c) for c in chunks]
     t0 = time.time()
     embeddings = model.encode(
         texts,
@@ -122,7 +142,7 @@ def build_chroma_index(
     collection = client.create_collection(CHROMA_COLLECTION_NAME)
 
     ids = [c["chunk_id"] for c in chunks]
-    documents = [c["text"] for c in chunks]
+    documents = [contextualize(c) for c in chunks]
     metadatas = [
         {
             "source_file": c["source_file"],
@@ -157,7 +177,7 @@ def build_bm25_index(chunks: list[dict], bm25_path: Path) -> None:
         chunks: Chunk dicts.
         bm25_path: Output path for the pickled index.
     """
-    tokenized_corpus = [tokenize(c["text"]) for c in chunks]
+    tokenized_corpus = [tokenize(contextualize(c)) for c in chunks]
     bm25 = BM25Okapi(tokenized_corpus)
 
     bm25_path.parent.mkdir(parents=True, exist_ok=True)
